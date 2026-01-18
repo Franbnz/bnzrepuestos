@@ -141,4 +141,19 @@ body {
   border-radius: 14px;
 }
 
+.titulo-productos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.icono-titulo {
+  color: rgb(81, 27, 102);
+}
+
+.beneficios i {
+  color: rgb(81, 27, 102);
+}
+
 /*# sourceMappingURL=style.css.map */

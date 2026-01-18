@@ -1,7 +1,7 @@
 /* =======================
    VARIABLES
 ======================= */
-$color-principal: rgb(103, 71, 116);
+$color-principal: rgb(81, 27, 102);
 $color-card: #ffffff8c;
 $radio-card: 12px;
 
@@ -160,4 +160,19 @@ button {
   margin-top: 20px;
   object-fit: contain;
   border-radius: 14px;
+}
+
+.titulo-productos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.icono-titulo {
+  color: $color-principal;
+}
+
+.beneficios i {
+  color: $color-principal;
 }
