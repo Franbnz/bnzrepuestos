@@ -1,0 +1,25 @@
+.hero-section {
+  height: 45vh;
+  background-color: #ffffff; 
+  background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url("../img/bannerdos.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  
+  @include flex-column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  padding: 0 40px;
+}
+
+.hero-section {
+  h1 {
+    color: #ffffff;
+  }
+
+  h2 {
+    color: rgba(255, 255, 255, 0.85);
+  }
+}

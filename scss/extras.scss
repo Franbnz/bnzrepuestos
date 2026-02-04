@@ -1,0 +1,31 @@
+.titulo-productos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.icono-titulo,
+.beneficios i {
+  color: $color-principal;
+}
+
+.navbar-custom {
+  background-color: rgb(103, 71, 116);
+}
+
+.navbar-custom .nav-link {
+  color: #fff;
+}
+
+.navbar-custom .navbar-brand img {
+  display: block;
+}
+
+.home {
+  background: linear-gradient(
+    180deg,
+    $color-fondo 0%,
+    #ffffff 60%
+  );
+}

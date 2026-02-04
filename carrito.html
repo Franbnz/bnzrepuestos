@@ -1,84 +1,187 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BNZ Repuestos</title>
+    <title>Carrito | BNZ Repuestos</title>
 
+    <!-- BOOTSTRAP -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css/style.css">
+
+    <!-- ICONOS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+
+    <!-- CSS PROPIO -->
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
-<nav class="navbar navbar-expand-lg" style="background-color: rgb(103, 71, 116);">
-  <div class="container">
+<!-- ================= HEADER ================= -->
+<header>
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: rgb(103, 71, 116);">
+        <div class="container">
 
-    <!-- LOGO -->
-    <a class="navbar-brand" href="index.html">
-      <img src="./img/logo.png" alt="BNZ Repuestos" height="45">
-    </a>
+            <a class="navbar-brand" href="index.html">
+                <img src="./img/logo.png" alt="BNZ Repuestos" height="45">
+            </a>
 
-    <!-- BOTÓN HAMBURGUESA -->
-    <button class="navbar-toggler" type="button"
-      data-bs-toggle="collapse"
-      data-bs-target="#navbarNav"
-      aria-controls="navbarNav"
-      aria-expanded="false"
-      aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNav"
+                aria-controls="navbarNav"
+                aria-expanded="false"
+                aria-label="Abrir menú de navegación">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-    <!-- MENÚ -->
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ms-auto text-center">
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto text-center">
+                    <li class="nav-item"><a class="nav-link text-white" href="index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="productos.html">Productos</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="sobrenosotros.html">Sobre nosotros</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="contactos.html">Contactos</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white active" href="carrito.html">Carrito 🛒</a>
+                    </li>
+                </ul>
+            </div>
 
-        <li class="nav-item">
-          <a class="nav-link text-white" href="index.html">Inicio</a>
-        </li>
+        </div>
+    </nav>
+</header>
 
-        <li class="nav-item">
-          <a class="nav-link text-white" href="productos.html">Productos</a>
-        </li>
+<!-- ================= MAIN ================= -->
+<main class="container my-5 carrito">
 
-        <li class="nav-item">
-          <a class="nav-link text-white" href="sobrenosotros.html">Sobre nosotros</a>
-        </li>
+    <section class="text-center mb-5">
+        <h1>Carrito de compras</h1>
+        <p>Revisá los productos antes de finalizar tu compra</p>
+    </section>
 
-        <li class="nav-item">
-          <a class="nav-link text-white" href="contactos.html">Contactos</a>
-        </li>
+    <section class="row justify-content-center">
+        <div class="col-md-8">
 
-        <li class="nav-item">
-          <a class="nav-link text-white" href="carrito.html">Carrito 🛒</a>
-        </li>
+            <!-- ITEM -->
+            <div class="carrito-item mb-4">
+                <div class="row align-items-center">
 
-      </ul>
+                    <div class="col-md-8">
+                        <h5 class="mb-1">Discos de freno</h5>
+                        <p class="mb-0 text-muted">
+                            Repuesto automotriz multimarca
+                        </p>
+                    </div>
+
+                    <div class="col-md-4 text-md-end mt-3 mt-md-0">
+                        <p class="mb-0 fw-bold">$135.000</p>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- TOTAL -->
+            <div class="d-flex justify-content-between align-items-center mb-4 carrito-total">
+                <h5>Total</h5>
+                <h5 class="fw-bold">$135.000</h5>
+            </div>
+
+            <!-- ACCIÓN -->
+            <div class="text-center">
+                <a href="contactos.html" class="btn btn-comprar btn-lg">
+                    Finalizar compra
+                </a>
+            </div>
+
+        </div>
+    </section>
+<!-- ================= RESUMEN ================= -->
+<section class="row justify-content-center mt-5">
+  <div class="col-md-8">
+
+    <div class="carrito-resumen p-4 mb-4">
+      <h5 class="mb-3">Resumen del pedido</h5>
+
+      <div class="d-flex justify-content-between mb-2">
+        <span>Subtotal</span>
+        <span>$135.000</span>
+      </div>
+
+      <div class="d-flex justify-content-between mb-2">
+        <span>Envío</span>
+        <span>A coordinar</span>
+      </div>
+
+      <hr>
+
+      <div class="d-flex justify-content-between fw-bold">
+        <span>Total</span>
+        <span>$135.000</span>
+      </div>
     </div>
 
   </div>
-</nav>
+</section>
 
-    <main class="container py-5">
+<!-- ================= BENEFICIOS ================= -->
+<section class="row justify-content-center mb-5">
+  <div class="col-md-8">
 
-        <h1 class="text-center mb-4">Carrito de compras 🛒</h1>
+    <div class="carrito-beneficios text-center p-4">
+      <p class="mb-2">✔ Productos originales y multimarca</p>
+      <p class="mb-2">✔ Atención personalizada</p>
+      <p class="mb-0">✔ Envíos a todo el país</p>
+    </div>
 
-        <div class="border rounded p-3 mb-4">
-            <p><strong>Producto:</strong> Discos de freno</p>
-            <p><strong>Precio:</strong> $135.000</p>
-        </div>
+  </div>
+</section>
 
-        <div class="text-center">
-            <a href="./contactos.html" class="btn-comprar">
-                Finalizar compra
-            </a>
-        </div>
+</main>
 
-    </main>
+<<!-- ================= FOOTER ================= -->
+<footer class="footer-bnz py-4">
+  <div class="container text-center">
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <div class="row">
 
+      <!-- INFO -->
+      <div class="col-md-4 mb-3">
+        <h5>BNZ REPUESTOS</h5>
+        <p>Repuestos automotrices multimarca de calidad.</p>
+      </div>
 
+      <!-- ENLACES -->
+      <div class="col-md-4 mb-3">
+        <h5>Enlaces</h5>
+        <ul class="list-unstyled footer-links">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="productos.html">Productos</a></li>
+          <li><a href="sobrenosotros.html">Sobre nosotros</a></li>
+          <li><a href="contactos.html">Contactos</a></li>
+          <li><a href="carrito.html">Carrito</a></li>
+        </ul>
+      </div>
+
+      <!-- CONTACTO -->
+      <div class="col-md-4 mb-3">
+        <h5>Contacto</h5>
+        <p>📍 Av. 9 de Julio 1111</p>
+        <p>📞 +54 9 11 1234 5678</p>
+        <p>✉️ info@bnzrepuestos.com.ar</p>
+      </div>
+
+    </div>
+
+    <div class="mt-3 footer-bottom">
+      <small>© 2024 BNZ REPUESTOS · Todos los derechos reservados</small>
+    </div>
+
+  </div>
+</footer>
+
+<!-- BOOTSTRAP JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

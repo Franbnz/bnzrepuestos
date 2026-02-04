@@ -1,72 +1,61 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BNZ REPUESTOS</title>
+
+    <!-- BOOTSTRAP CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css/style.css">
-    
+
+    <!-- BOOTSTRAP ICONS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+
+    <!-- CSS PROPIO -->
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-<nav class="navbar navbar-expand-lg" style="background-color: rgb(103, 71, 116);">
-  <div class="container">
 
-    <!-- LOGO -->
-    <a class="navbar-brand" href="index.html">
-      <img src="./img/logo.png" alt="BNZ Repuestos" height="45">
-    </a>
+<!-- ================= HEADER ================= -->
+<header>
+  <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: rgb(103, 71, 116);">
+    <div class="container">
 
-    <!-- BOTÓN HAMBURGUESA -->
-    <button class="navbar-toggler" type="button"
-      data-bs-toggle="collapse"
-      data-bs-target="#navbarNav"
-      aria-controls="navbarNav"
-      aria-expanded="false"
-      aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+      <a class="navbar-brand" href="index.html">
+        <img src="./img/logo.png" alt="BNZ Repuestos" height="45">
+      </a>
 
-    <!-- MENÚ -->
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ms-auto text-center">
+      <button class="navbar-toggler" type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Abrir menú de navegación">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-        <li class="nav-item">
-          <a class="nav-link text-white" href="index.html">Inicio</a>
-        </li>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto text-center">
+          <li class="nav-item"><a class="nav-link text-white" href="index.html">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="productos.html">Productos</a></li>
+          <li class="nav-item"><a class="nav-link text-white active" href="sobrenosotros.html">Sobre nosotros</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="contactos.html">Contactos</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="carrito.html">Carrito 🛒</a></li>
+        </ul>
+      </div>
 
-        <li class="nav-item">
-          <a class="nav-link text-white" href="productos.html">Productos</a>
-        </li>
-
-        <li class="nav-item">
-          <a class="nav-link text-white" href="sobrenosotros.html">Sobre nosotros</a>
-        </li>
-
-        <li class="nav-item">
-          <a class="nav-link text-white" href="contactos.html">Contactos</a>
-        </li>
-
-        <li class="nav-item">
-          <a class="nav-link text-white" href="carrito.html">Carrito 🛒</a>
-        </li>
-
-      </ul>
     </div>
+  </nav>
+</header>
 
-  </div>
-</nav>
+<!-- ================= MAIN ================= -->
 <main class="container py-5">
 
-    <!-- TÍTULO -->
     <h1 class="text-center mb-5">Sobre Nosotros</h1>
 
-    <!-- SECCIÓN IMAGEN + TEXTO -->
     <div class="row align-items-center mb-5">
-
         <div class="col-md-6 mb-4 mb-md-0">
             <img src="./img/sobrenosotros.png"
                  class="img-fluid rounded shadow"
@@ -79,62 +68,94 @@
                 automotrices multimarca, brindando soluciones confiables tanto para
                 particulares como para talleres.
             </p>
-
             <p>
                 Nuestro objetivo es ofrecer productos de calidad, atención personalizada
                 y precios accesibles, acompañando a nuestros clientes en cada compra.
             </p>
         </div>
-
     </div>
 
+    <div class="row justify-content-center text-center">
 
-    <div class="row text-center">
-
-        <div class="col-md-4 mb-4">
+    <div class="col-md-4 col-lg-3 mb-4">
             <div class="card h-100 shadow-sm">
                 <div class="card-body">
                     <h5 class="card-title">Misión</h5>
-                    <p class="card-text">
-                        Ofrecer repuestos confiables y accesibles para todo tipo de vehículos.
-                    </p>
+                    <p class="card-text">Ofrecer repuestos confiables y accesibles para todo tipo de vehículos.</p>
                 </div>
             </div>
         </div>
 
-        <div class="col-md-4 mb-4">
+        <div class="col-md-4 col-lg-3 mb-4">
             <div class="card h-100 shadow-sm">
                 <div class="card-body">
                     <h5 class="card-title">Visión</h5>
-                    <p class="card-text">
-                        Ser una referencia en el rubro de repuestos automotrices.
-                    </p>
+                    <p class="card-text">Ser una referencia en el rubro de repuestos automotrices.</p>
                 </div>
             </div>
         </div>
 
-        <div class="col-md-4 mb-4">
+        <div class="col-md-4 col-lg-3 mb-4">
             <div class="card h-100 shadow-sm">
                 <div class="card-body">
                     <h5 class="card-title">Valores</h5>
-                    <p class="card-text">
-                        Honestidad, compromiso, calidad y atención personalizada.
-                    </p>
+                    <p class="card-text">Honestidad, compromiso, calidad y atención personalizada.</p>
                 </div>
             </div>
         </div>
 
     </div>
 
-    <!-- BOTÓN FINAL -->
     <div class="text-center mt-4">
-        <a href="productos.html" class="btn btn-lg btn-comprar">
-            Ver productos
-        </a>
+        <a href="productos.html" class="btn btn-lg btn-comprar">Ver productos</a>
     </div>
 
 </main>
 
+<!-- ================= FOOTER ================= -->
+<footer class="footer-bnz py-4">
+  <div class="container text-center">
+
+    <div class="row">
+
+      <!-- INFO -->
+      <div class="col-md-4 mb-3">
+        <h5>BNZ REPUESTOS</h5>
+        <p>Repuestos automotrices multimarca de calidad.</p>
+      </div>
+
+      <!-- ENLACES -->
+      <div class="col-md-4 mb-3">
+        <h5>Enlaces</h5>
+        <ul class="list-unstyled footer-links">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="productos.html">Productos</a></li>
+          <li><a href="sobrenosotros.html">Sobre nosotros</a></li>
+          <li><a href="contactos.html">Contactos</a></li>
+          <li><a href="carrito.html">Carrito</a></li>
+        </ul>
+      </div>
+
+      <!-- CONTACTO -->
+      <div class="col-md-4 mb-3">
+        <h5>Contacto</h5>
+        <p>📍 Av. 9 de Julio 1111</p>
+        <p>📞 +54 9 11 1234 5678</p>
+        <p>✉️ info@bnzrepuestos.com.ar</p>
+      </div>
+
+    </div>
+
+    <div class="mt-3 footer-bottom">
+      <small>© 2024 BNZ REPUESTOS · Todos los derechos reservados</small>
+    </div>
+
+  </div>
+</footer>
+
+
+<!-- BOOTSTRAP JS (UNA SOLA VEZ) -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-   
+
 </body>
+</html>
