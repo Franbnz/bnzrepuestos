@@ -1,159 +1,165 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>BNZ Repuestos | Productos</title>
 
-  <!-- Bootstrap -->
+  <meta name="description"
+        content="Descubrí repuestos automotrices multimarca en BNZ Repuestos. Calidad, variedad y precios competitivos para tu vehículo.">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="BNZ Repuestos">
+
+  <!-- BOOTSTRAP -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <!-- ICONOS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
 
-  <!-- CSS -->
- <link rel="stylesheet" href="css/style.css">
- 
+  <!-- CSS PROPIO -->
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
-  <!-- HEADER -->
-  <header>
-    <nav class="navbar navbar-expand-lg" style="background-color: rgb(103, 71, 116);">
-      <div class="container">
+<!-- ================= HEADER ================= -->
+<header>
+  <nav class="navbar navbar-expand-lg navbar-bnz">
+    <div class="container">
 
-        <!-- LOGO -->
-        <a class="navbar-brand" href="index.html">
-          <img src="./img/logo.png" alt="BNZ Repuestos" height="45">
-        </a>
+      <a class="navbar-brand" href="index.html">
+        <img src="./img/logo.png"
+             alt="Logo de BNZ Repuestos, repuestos automotrices multimarca"
+             height="45">
+      </a>
 
-        <!-- BOTÓN HAMBURGUESA -->
-        <button class="navbar-toggler" type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+      <button class="navbar-toggler" type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Abrir menú de navegación">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-        <!-- MENÚ -->
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto text-center">
-
-            <li class="nav-item">
-              <a class="nav-link text-white" href="index.html">Inicio</a>
-            </li>
-
-            <li class="nav-item">
-              <a class="nav-link text-white active" href="productos.html">Productos</a>
-            </li>
-
-            <li class="nav-item">
-              <a class="nav-link text-white" href="sobrenosotros.html">Sobre nosotros</a>
-            </li>
-
-            <li class="nav-item">
-              <a class="nav-link text-white" href="contactos.html">Contactos</a>
-            </li>
-
-            <li class="nav-item">
-              <a class="nav-link text-white" href="carrito.html">Carrito 🛒</a>
-            </li>
-
-          </ul>
-        </div>
-
-      </div>
-    </nav>
-  </header>
-
-  <!-- MAIN -->
-  <main>
-
-    <!-- TÍTULO -->
-    <section class="text-center my-5">
-      <h1 class="titulo-productos">
-        <i class="fa-solid fa-gears icono-titulo"></i>
-        Repuestos para tu vehículo
-      </h1>
-
-      <p class="mt-2">
-        Encontrá repuestos automotrices multimarca de calidad,
-        al mejor precio y con atención personalizada.
-      </p>
-
-      <div class="d-flex justify-content-center gap-4 mt-3 flex-wrap beneficios">
-        <span><i class="fa-solid fa-check"></i> Multimarca</span>
-        <span><i class="fa-solid fa-check"></i> Calidad garantizada</span>
-        <span><i class="fa-solid fa-check"></i> Envíos a todo el país</span>
-      </div>
-    </section>
-
-    <!-- PRODUCTOS -->
-    <section class="productos">
-
-      <div class="card">
-        <img src="./img/Liquido_Refrigerante.jpg" alt="Liquido refrigerante">
-        <h3>Liquido Refrigerante</h3>
-        <p class="precio">$2000</p>
-        <a href="carrito.html" class="btn-comprar">Comprar</a>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto text-center">
+          <li class="nav-item">
+            <a class="nav-link nav-link-bnz" href="index.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-link-bnz active" href="productos.html">Productos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-link-bnz" href="sobrenosotros.html">Sobre nosotros</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-link-bnz" href="contactos.html">Contactos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-link-bnz" href="carrito.html">Carrito 🛒</a>
+          </li>
+        </ul>
       </div>
 
-      <div class="card">
-        <img src="./img/Liquido_Hidraulico.jpg" alt="Liquido hidráulico">
-        <h3>Liquido Hidráulico</h3>
-        <p class="precio">$20000</p>
-        <a href="carrito.html" class="btn-comprar">Comprar</a>
-      </div>
+    </div>
+  </nav>
+</header>
 
-      <div class="card">
-        <img src="./img/Agua_Destilada.jpg" alt="Agua destilada">
-        <h3>Agua Destilada</h3>
-        <p class="precio">$1000</p>
-        <a href="carrito.html" class="btn-comprar">Comprar</a>
-      </div>
+<!-- ================= MAIN ================= -->
+<main class="container">
 
-      <div class="card">
-        <img src="./img/Disco_Frenos.jpg" alt="Discos de freno">
-        <h3>Discos de freno</h3>
-        <p class="precio">$135000</p>
-        <a href="carrito.html" class="btn-comprar">Comprar</a>
-      </div>
+  <!-- TÍTULO -->
+  <section class="text-center my-5">
+    <h1 class="titulo-productos">
+      <i class="fa-solid fa-gears icono-titulo"></i>
+      Repuestos para tu vehículo
+    </h1>
 
-      <div class="card">
-        <img src="./img/Embrague.jpg" alt="Embrague">
-        <h3>Embrague</h3>
-        <p class="precio">$369000</p>
-        <a href="carrito.html" class="btn-comprar">Comprar</a>
-      </div>
+    <p class="mt-2">
+      Encontrá repuestos automotrices multimarca de calidad,
+      al mejor precio y con atención personalizada.
+    </p>
 
-      <div class="card">
-        <img src="./img/Parrilla_Suspension.jpg" alt="Parrilla de suspensión">
-        <h3>Parrilla de suspensión</h3>
-        <p class="precio">$98400</p>
-        <a href="carrito.html" class="btn-comprar">Comprar</a>
-      </div>
+    <div class="d-flex justify-content-center gap-4 mt-3 flex-wrap beneficios">
+      <span><i class="fa-solid fa-check"></i> Multimarca</span>
+      <span><i class="fa-solid fa-check"></i> Calidad garantizada</span>
+      <span><i class="fa-solid fa-check"></i> Envíos a todo el país</span>
+    </div>
+  </section>
 
-      <div class="card">
-        <img src="./img/Pastillas_Frenos.jpg" alt="Pastillas de freno">
-        <h3>Pastillas de freno</h3>
-        <p class="precio">$43512</p>
-        <a href="carrito.html" class="btn-comprar">Comprar</a>
-      </div>
+  <!-- PRODUCTOS -->
+  <section class="productos">
 
-      <div class="card">
-        <img src="./img/Rotulas.jpg" alt="Rótulas de suspensión">
-        <h3>Rótulas de suspensión</h3>
-        <p class="precio">$44536</p>
-        <a href="carrito.html" class="btn-comprar">Comprar</a>
-      </div>
+    <article class="card">
+      <img src="./img/Liquido_Refrigerante.jpg"
+           alt="Líquido refrigerante para motor automotriz">
+      <h2 class="h5">Líquido refrigerante</h2>
+      <p class="precio">$2.000</p>
+      <a href="carrito.html" class="btn-comprar">Comprar</a>
+    </article>
 
-    </section>
+    <article class="card">
+      <img src="./img/Liquido_Hidraulico.jpg"
+           alt="Líquido hidráulico para sistemas de dirección">
+      <h2 class="h5">Líquido hidráulico</h2>
+      <p class="precio">$20.000</p>
+      <a href="carrito.html" class="btn-comprar">Comprar</a>
+    </article>
 
-  </main>
+    <article class="card">
+      <img src="./img/Agua_Destilada.jpg"
+           alt="Agua destilada para mantenimiento automotriz">
+      <h2 class="h5">Agua destilada</h2>
+      <p class="precio">$1.000</p>
+      <a href="carrito.html" class="btn-comprar">Comprar</a>
+    </article>
+
+    <article class="card">
+      <img src="./img/Disco_Frenos.jpg"
+           alt="Discos de freno delanteros automotrices">
+      <h2 class="h5">Discos de freno</h2>
+      <p class="precio">$135.000</p>
+      <a href="carrito.html" class="btn-comprar">Comprar</a>
+    </article>
+
+    <article class="card">
+      <img src="./img/Embrague.jpg"
+           alt="Kit de embrague para vehículos multimarca">
+      <h2 class="h5">Embrague</h2>
+      <p class="precio">$369.000</p>
+      <a href="carrito.html" class="btn-comprar">Comprar</a>
+    </article>
+
+    <article class="card">
+      <img src="./img/Parrilla_Suspension.jpg"
+           alt="Parrilla de suspensión delantera automotriz">
+      <h2 class="h5">Parrilla de suspensión</h2>
+      <p class="precio">$98.400</p>
+      <a href="carrito.html" class="btn-comprar">Comprar</a>
+    </article>
+
+    <article class="card">
+      <img src="./img/Pastillas_Frenos.jpg"
+           alt="Pastillas de freno para sistema de frenos">
+      <h2 class="h5">Pastillas de freno</h2>
+      <p class="precio">$43.512</p>
+      <a href="carrito.html" class="btn-comprar">Comprar</a>
+    </article>
+
+    <article class="card">
+      <img src="./img/Rotulas.jpg"
+           alt="Rótulas de suspensión automotriz">
+      <h2 class="h5">Rótulas de suspensión</h2>
+      <p class="precio">$44.536</p>
+      <a href="carrito.html" class="btn-comprar">Comprar</a>
+    </article>
+
+  </section>
+
+</main>
 
 <!-- ================= FOOTER ================= -->
 <footer class="footer-bnz py-4">
@@ -161,13 +167,11 @@
 
     <div class="row">
 
-      <!-- INFO -->
       <div class="col-md-4 mb-3">
         <h5>BNZ REPUESTOS</h5>
         <p>Repuestos automotrices multimarca de calidad.</p>
       </div>
 
-      <!-- ENLACES -->
       <div class="col-md-4 mb-3">
         <h5>Enlaces</h5>
         <ul class="list-unstyled footer-links">
@@ -179,7 +183,6 @@
         </ul>
       </div>
 
-      <!-- CONTACTO -->
       <div class="col-md-4 mb-3">
         <h5>Contacto</h5>
         <p>📍 Av. 9 de Julio 1111</p>
@@ -196,11 +199,8 @@
   </div>
 </footer>
 
-
-
-
-  <!-- Bootstrap JS -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<!-- BOOTSTRAP JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>

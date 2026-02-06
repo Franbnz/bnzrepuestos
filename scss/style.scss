@@ -1,11 +1,19 @@
-@use "sass:color";
 
-@import "variables";
-@import "mixins";
-@import "base";
-@import "hero";
-@import "cards";   // 👈 CORRECTO
-@import "carrito";
-@import "contacto";
-@import "footer";
-@import "extras";
+/* Utils */
+@import "utils/variables";
+@import "utils/mixins";
+
+/* Base */
+@import "base/base";
+
+/* Componentes */
+@import "componentes/cards";
+@import "componentes/hero";
+@import "componentes/extras";
+
+/* Layout */
+@import "layout/header";
+@import "layout/footer";
+@import "layout/carrito";
+@import "layout/contacto";
+

@@ -1,4 +1,8 @@
 @charset "UTF-8";
+/* Utils */
+/* Paleta principal */
+/* Alias violeta (para header / navbar) */
+/* Base */
 * {
   margin: 0;
   padding: 0;
@@ -20,14 +24,14 @@ h1,
 h2,
 h3,
 h4 {
-  color: rgb(103, 71, 116);
+  color: #674774;
   font-weight: 700;
 }
 
 /* ================= HR ================= */
 hr {
   opacity: 0.1;
-  border-color: rgb(103, 71, 116);
+  border-color: #674774;
 }
 
 /* ================= CAROUSEL ================= */
@@ -50,30 +54,7 @@ hr {
   border: 1px solid rgba(0, 0, 0, 0.05);
 }
 
-.hero-section {
-  height: 45vh;
-  background-color: #ffffff;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../img/bannerdos.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  justify-content: center;
-  align-items: center;
-  color: white;
-  text-align: center;
-  padding: 0 40px;
-}
-
-.hero-section h1 {
-  color: #ffffff;
-}
-.hero-section h2 {
-  color: rgba(255, 255, 255, 0.85);
-}
-
+/* Componentes */
 /* GRID DE PRODUCTOS */
 .productos {
   display: grid;
@@ -115,13 +96,13 @@ hr {
 .card .precio {
   font-weight: bold;
   font-size: 1.2rem;
-  color: rgb(103, 71, 116);
+  color: #674774;
   margin-bottom: 10px;
 }
 
 /* BOTÓN */
 .btn-comprar {
-  background-color: rgb(103, 71, 116);
+  background-color: #674774;
   color: #fff;
   padding: 10px;
   border-radius: 8px;
@@ -137,38 +118,103 @@ hr {
   color: #fff;
 }
 
-.carrito-item {
-  background-color: #fff;
-  border-radius: 10px;
-  padding: 20px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-}
-
-.carrito-total {
-  border-top: 1px solid rgba(0, 0, 0, 0.1);
-  padding-top: 15px;
-}
-
-.ubicacion {
+.hero-section {
+  height: 45vh;
+  background-color: #ffffff;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../img/bannerdos.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  justify-content: center;
   align-items: center;
-}
-.ubicacion .mapa-container {
-  width: 100%;
-  max-width: 480px;
-  margin-top: 15px;
-}
-.ubicacion .mapa-container img {
-  width: 100%;
-  height: auto;
-  display: block;
-  border-radius: 10px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+  color: white;
+  text-align: center;
+  padding: 0 40px;
 }
 
-.footer-bnz {
+.hero-section h1 {
+  color: #ffffff;
+}
+.hero-section h2 {
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.titulo-productos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.icono-titulo,
+.beneficios i {
+  color: #674774;
+}
+
+.navbar-custom {
   background-color: rgb(103, 71, 116);
+}
+
+.navbar-custom .nav-link {
+  color: #fff;
+}
+
+.navbar-custom .navbar-brand img {
+  display: block;
+}
+
+.home {
+  background: linear-gradient(180deg, #fdfdfd 0%, #ffffff 60%);
+}
+
+.titulo-promo {
+  font-weight: 800;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+
+/* Layout */
+.navbar-bnz {
+  background-color: #674774;
+}
+
+.navbar-bnz .navbar-brand img {
+  max-height: 45px;
+}
+
+.nav-link-bnz {
+  color: rgba(255, 255, 255, 0.85);
+  font-weight: 500;
+}
+.nav-link-bnz:hover {
+  color: rgb(255, 255, 255);
+}
+
+.nav-link-bnz.active {
+  color: #ffffff;
+}
+
+.navbar-bnz .navbar-toggler {
+  border-color: rgba(255, 255, 255, 0.6);
+}
+
+.navbar-bnz .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255,255,255,0.85)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+@media (max-width: 991px) {
+  .navbar-bnz .navbar-nav {
+    margin-top: 0.75rem;
+  }
+  .navbar-bnz .nav-item {
+    padding: 0.25rem 0;
+  }
+}
+.footer-bnz {
+  background-color: #674774;
   color: #fff;
   padding: 28px 0;
   font-size: 0.92rem;
@@ -226,7 +272,7 @@ hr {
 }
 
 .footer-bnz {
-  background-color: rgb(103, 71, 116);
+  background-color: #674774;
   color: #ffffff;
 }
 .footer-bnz h5 {
@@ -246,32 +292,34 @@ hr {
   opacity: 0.75;
 }
 
-.titulo-productos {
+.carrito-item {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.carrito-total {
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  padding-top: 15px;
+}
+
+.ubicacion {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  gap: 10px;
 }
-
-.icono-titulo,
-.beneficios i {
-  color: rgb(103, 71, 116);
+.ubicacion .mapa-container {
+  width: 100%;
+  max-width: 480px;
+  margin-top: 15px;
 }
-
-.navbar-custom {
-  background-color: rgb(103, 71, 116);
-}
-
-.navbar-custom .nav-link {
-  color: #fff;
-}
-
-.navbar-custom .navbar-brand img {
+.ubicacion .mapa-container img {
+  width: 100%;
+  height: auto;
   display: block;
-}
-
-.home {
-  background: linear-gradient(180deg, #fdfdfd 0%, #ffffff 60%);
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
 }
 
 /*# sourceMappingURL=style.css.map */

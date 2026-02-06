@@ -1,0 +1,44 @@
+
+.navbar-bnz {
+  background-color: $violeta-principal;
+}
+
+
+.navbar-bnz .navbar-brand img {
+  max-height: 45px;
+}
+
+
+.nav-link-bnz {
+  color: rgba(255, 255, 255, 0.85);
+  font-weight: 500;
+
+  &:hover {
+    color: rgba(255, 255, 255, 1);
+  }
+}
+
+
+.nav-link-bnz.active {
+  color: #ffffff;
+}
+
+
+.navbar-bnz .navbar-toggler {
+  border-color: rgba(255, 255, 255, 0.6);
+}
+
+.navbar-bnz .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255,255,255,0.85)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+
+@media (max-width: 991px) {
+  .navbar-bnz .navbar-nav {
+    margin-top: 0.75rem;
+  }
+
+  .navbar-bnz .nav-item {
+    padding: 0.25rem 0;
+  }
+}
