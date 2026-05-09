@@ -1,0 +1,19 @@
+.ubicacion {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .mapa-container {
+    width: 100%;
+    max-width: 480px;   // ⬅️ el verdadero límite
+    margin-top: 15px;
+  }
+
+  .mapa-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+  }
+}
