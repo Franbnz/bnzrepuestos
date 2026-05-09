@@ -1,0 +1,98 @@
+.footer-bnz {
+  background-color: $color-principal;
+  color: #fff;
+  padding: 28px 0; // ⬅️ más compacto
+
+  // Tipografía general más liviana
+  font-size: 0.92rem;
+
+  .footer-title {
+    font-size: 0.9rem;        // ⬅️ títulos chicos
+    font-weight: 600;
+    letter-spacing: 0.04em;   // look moderno
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+  }
+
+  .footer-text {
+    opacity: 0.85;
+    line-height: 1.5;
+    max-width: 42ch;          // ⬅️ texto más prolijo
+  }
+
+  .footer-links {
+    li {
+      margin-bottom: 0.35rem;
+
+      a {
+        color: rgba(255, 255, 255, 0.85);
+        text-decoration: none;
+        font-size: 0.9rem;
+        transition: color .2s ease, transform .2s ease;
+
+        &:hover {
+          color: lighten($color-principal, 35%);
+          transform: translateX(2px); // micro-interacción
+        }
+      }
+    }
+  }
+
+  .footer-redes {
+    a {
+      margin-right: 10px;
+      font-size: 1.15rem; // ⬅️ íconos más chicos
+      opacity: 0.85;
+      transition: opacity .2s ease, transform .2s ease;
+
+      &:hover {
+        opacity: 1;
+        transform: translateY(-2px);
+      }
+    }
+  }
+
+  hr {
+    margin: 14px 0; // ⬅️ separador más fino
+    border-color: rgba(255,255,255,.18);
+  }
+
+  .footer-bottom {
+    font-size: 0.78rem;
+    opacity: 0.75;
+  }
+
+  // Mobile: aún más compacto
+  @media (max-width: 768px) {
+    padding: 22px 0;
+
+    .footer-text {
+      max-width: none;
+    }
+  }
+}
+
+.footer-bnz {
+  background-color: $color-principal; // tu violeta
+  color: #ffffff;
+
+  h5 {
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: #ffffff;
+  }
+
+  p, small {
+    opacity: 0.9;
+  }
+
+  a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: opacity 0.3s ease;
+
+    &:hover {
+      opacity: 0.75;
+    }
+  }
+}
