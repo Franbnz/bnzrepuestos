@@ -1,0 +1,38 @@
+[
+    {
+        "id": 1,
+        "nombre": "Líquido refrigerante",
+        "precio": 2000,
+        "img": "./img/Liquido_Refrigerante.jpg"
+    },
+    {
+        "id": 2,
+        "nombre": "Líquido hidráulico",
+        "precio": 20000,
+        "img": "./img/Liquido_Hidraulico.jpg"
+    },
+    {
+        "id": 3,
+        "nombre": "Agua destilada",
+        "precio": 1000,
+        "img": "./img/Agua_Destilada.jpg"
+    },
+    {
+        "id": 4,
+        "nombre": "Discos de freno",
+        "precio": 135000,
+        "img": "./img/Disco_Frenos.jpg"
+    },
+    {
+        "id": 5,
+        "nombre": "Embrague",
+        "precio": 369000,
+        "img": "./img/Embrague.jpg"
+    },
+    {
+        "id": 6,
+        "nombre": "Parrilla de suspensión",
+        "precio": 98400,
+        "img": "./img/Parrilla_Suspension.jpg"
+    }
+]
